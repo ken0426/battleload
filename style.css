@@ -711,4 +711,34 @@ input[type="date"]{
   .btn-search{
     height: 48px;
   }
+
+  .details{
+    width: 70%;
+    display: block;
+  }
+
+  .reception{
+    top: 1%;
+  }
+  
+  .details-left{
+    width: 100%;
+    text-align: center;
+  }
+
+  .details-left h2{
+    width: 91%;
+  }
+
+  .details-left img{
+    width: 100%;
+  }
+  
+  .details-right{
+    width: 100%;
+  }
+
+  #word{
+    display: none;
+  }
 }
