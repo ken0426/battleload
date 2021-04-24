@@ -118,12 +118,9 @@ details_right = Array.from(details_rights);
 
 
 for (var i = 0; i < bottom_arrow.length; i++) {
-  bottom_arrow.forEach(function(bottom_arrow){
-    bottom_arrow[i].addEventListener('click',()=>{
+bottom_arrow.forEach(function(bottom_arrow){
+  bottom_arrow.addEventListener('click',()=>{
       bottom_arrow.style.display = "none";
-      // imag_box.style.display = "block";
-      // details_right.style.display = "block";
-      // top_arrow.style.display = "inline";
       imag_box.forEach(function(imag_box){
           imag_box.style.display = "block";
       });
@@ -142,9 +139,6 @@ for (var i = 0; i < bottom_arrow.length; i++) {
 top_arrow.forEach(function(top_arrow){
   top_arrow.addEventListener('click',()=>{
     top_arrow.style.display = "none";
-    // imag_box.style.display = "block";
-    // details_right.style.display = "block";
-    // top_arrow.style.display = "inline";
     imag_box.forEach(function(imag_box){
         imag_box.style.display = "none";
     });
