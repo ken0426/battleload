@@ -130,7 +130,7 @@ header li{
   font-size: 25px;
   color: rgb(169 162 162);       /* 文字色を白に変更 */
   font-family: Beon; /* ネオン風のフォントを指定(ダウンロードしたもの) */
-  animation: flash 1s infinite; /* アニメーションflashを1秒ごとに繰り返す */
+  text-shadow: #8dff4a 1px 0 10px;
 }
 
 .reception-out{
@@ -139,29 +139,8 @@ header li{
   font-size: 25px;
   color: rgb(169 162 162);       /* 文字色を白に変更 */
   font-family: Beon; /* ネオン風のフォントを指定(ダウンロードしたもの) */
-  animation: flash-out 1s infinite; /* アニメーションflashを1秒ごとに繰り返す */
-}
-
-@keyframes flash {
-  0%, 100% {
-    /* 明るく光るよう影を重ねる */
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8dff4a, 0 0 70px #8dff4a, 0 0 80px #8dff4a, 0 0 100px #8dff4a, 0 0 150px #ff00de;
-  }
-  50% {
-    /* 淡く光るよう影を重ねる */
-    text-shadow: 0 0 10px #fff, 0 0 20px #fcfcfc, 0 0 30px #fcfcfc, 0 0 40px #8dff4a;
-  }
-}
-
-@keyframes flash-out {
-  0%, 100% {
-    /* 明るく光るよう影を重ねる */
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fe4a4a, 0 0 70px #fe4a4a, 0 0 80px #fe4a4a, 0 0 100px #fe4a4a, 0 0 150px #ff00de;
-  }
-  50% {
-    /* 淡く光るよう影を重ねる */
-    text-shadow: 0 0 10px #fff, 0 0 20px #fcfcfc, 0 0 30px #fcfcfc, 0 0 40px #fe4a4a;
-  }
+  /* animation: flash-out 1s infinite; */
+  text-shadow: #fe4a4a 1px 0 10px;
 }
 
 .details-left{
@@ -719,6 +698,12 @@ input[type="date"]{
 
   .reception{
     top: 1%;
+    left: 20px;
+  }
+
+  .reception-out{
+    top: 1%;
+    left: 20px;
   }
   
   .details-left{
