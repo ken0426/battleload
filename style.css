@@ -708,6 +708,10 @@ input[type="date"]{
     display: block;
   }
 
+  .event-date{
+    font-size: 12px;
+  }
+
   .reception{
     top: 8px;
     left: 20px;
