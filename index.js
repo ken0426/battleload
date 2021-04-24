@@ -91,6 +91,8 @@ btn_reset.addEventListener('click',()=>{
   document.conditions_menu.reset();
   setCurrentValue(inputElem.value);
   bar.style.width = 0;
+  area.style.display = "flex";
+  area_box.style.display = "block";
 })
 
 menuButton.addEventListener('click', ()=>{
