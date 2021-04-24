@@ -11,7 +11,11 @@ const on_line_btn = document.getElementById("on-line-btn");
 const off_line_btn = document.getElementById("off-line-btn");
 const area = document.getElementById("area");
 const area_box = document.getElementById("area-box");
-const menuButton = document.getElementById("menuButton")
+const menuButton = document.getElementById("menuButton");
+const bottom_arrows = document.getElementsByClassName("bottom-arrow");
+const top_arrows = document.getElementsByClassName("top-arrow");
+const imag_boxs = document.getElementsByClassName("imag-box");
+const details_rights = document.getElementsByClassName("details-right");
 
 document.addEventListener("DOMContentLoaded", function() {
   for (let i = 0; i < targetElement.length; i++) {
@@ -106,5 +110,52 @@ mask.addEventListener('click',()=>{
   nav.classList.toggle("active");
   mask.classList.toggle("active");
 })
+
+bottom_arrow = Array.from(bottom_arrows);
+top_arrow = Array.from(top_arrows);
+imag_box = Array.from(imag_boxs);
+details_right = Array.from(details_rights);
+
+
+for (var i = 0; i < bottom_arrow.length; i++) {
+  bottom_arrow.forEach(function(bottom_arrow){
+    bottom_arrow[i].addEventListener('click',()=>{
+      bottom_arrow.style.display = "none";
+      // imag_box.style.display = "block";
+      // details_right.style.display = "block";
+      // top_arrow.style.display = "inline";
+      imag_box.forEach(function(imag_box){
+          imag_box.style.display = "block";
+      });
+      details_right.forEach(function(details_right){
+        details_right.style.display = "block";
+      });
+      top_arrow.forEach(function(top_arrow){
+        top_arrow.style.display = "block";
+      });
+    });
+  });
+}
+
+
+
+top_arrow.forEach(function(top_arrow){
+  top_arrow.addEventListener('click',()=>{
+    top_arrow.style.display = "none";
+    // imag_box.style.display = "block";
+    // details_right.style.display = "block";
+    // top_arrow.style.display = "inline";
+    imag_box.forEach(function(imag_box){
+        imag_box.style.display = "none";
+    });
+    details_right.forEach(function(details_right){
+      details_right.style.display = "none";
+    });
+    bottom_arrow.forEach(function(bottom_arrow){
+      bottom_arrow.style.display = "block";
+    });
+  });
+});
+
 
 

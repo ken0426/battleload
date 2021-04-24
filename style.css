@@ -165,6 +165,10 @@ header li{
   height: 80%;
 }
 
+.bottom-arrow{
+  display: none;
+}
+
 .details-left img{
   display: block;
   width: 80%;
@@ -701,12 +705,12 @@ input[type="date"]{
   }
 
   .reception{
-    top: 1%;
+    top: 8px;
     left: 20px;
   }
 
   .reception-out{
-    top: 1%;
+    top: 8px;
     left: 20px;
   }
   
@@ -719,6 +723,34 @@ input[type="date"]{
     font-size: calc( (100vw / 428 ) * 39 );
   }
 
+  .top-arrow{
+    display: none;
+    width: 30px;
+    top: 6px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .bottom-arrow{
+    display: initial;
+    width: 30px;
+    top: 6px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .top-arrow.active{
+    display: inline;
+  }
+
+  .bottom-arrow.active{
+    display: none;
+  }
+
+  .imag-box{
+    display: none;
+  }
+
   .details-left img{
     width: 70%;
     margin: 0 auto;
@@ -726,6 +758,11 @@ input[type="date"]{
   
   .details-right{
     width: 100%;
+    display: none;
+  }
+
+  .details-right.active{
+    display: block;
   }
 
   #word{
