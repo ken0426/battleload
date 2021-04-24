@@ -661,6 +661,10 @@ input[type="date"]{
     max-height: 27px;
   }
 
+  .details-center{
+    font-size: 31px;
+  }
+
   .content__modal.is-search{
     padding: 20px 20px;
     height: calc(100% - 220px);
