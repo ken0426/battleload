@@ -663,4 +663,52 @@ input[type="date"]{
   .search_container{
     width: 80vw;
   }
+
+  .conditions-menu.active{
+    width: 95vw;
+  }
+
+  .header-modal-img{
+    width: calc(( 44.1 / 428 ) *100vw );
+    height: calc(( 45 / 428 ) *100vw );
+    max-width: 44.1px;
+    max-height: 45px;
+  }
+
+  .header-modal-boll-img {
+    width: calc(( 27 / 428 ) *100vw );
+    height: calc(( 27 / 428 ) *100vw );
+    max-width: 27px;
+    max-height: 27px;
+  }
+
+  .content__modal.is-search{
+    padding: 20px 20px;
+    height: calc(100% - 220px);
+  }
+
+  input[type="date"]{
+    width: 43%;
+  }
+
+  .list__search-submit{
+    display: block;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+
+  .item__list__search-submit{
+    width: 224px;
+    margin-top: 5px;
+    margin: 5px auto;
+  }
+
+  .btn-search-reset{
+    height: 48px;
+    margin-top: 9px;
+  }
+
+  .btn-search{
+    height: 48px;
+  }
 }
