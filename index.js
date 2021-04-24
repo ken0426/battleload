@@ -12,10 +12,10 @@ const off_line_btn = document.getElementById("off-line-btn");
 const area = document.getElementById("area");
 const area_box = document.getElementById("area-box");
 const menuButton = document.getElementById("menuButton");
-const bottom_arrows = document.getElementsByClassName("bottom-arrow");
-const top_arrows = document.getElementsByClassName("top-arrow");
-const imag_boxs = document.getElementsByClassName("imag-box");
-const details_rights = document.getElementsByClassName("details-right");
+const bottom_arrow = document.querySelectorAll(".bottom-arrow");
+const top_arrow = document.querySelectorAll(".top-arrow");
+const imag_box = document.querySelectorAll(".imag-box");
+const details_right = document.querySelectorAll(".details-right");
 
 document.addEventListener("DOMContentLoaded", function() {
   for (let i = 0; i < targetElement.length; i++) {
@@ -111,45 +111,172 @@ mask.addEventListener('click',()=>{
   mask.classList.toggle("active");
 })
 
-bottom_arrow = Array.from(bottom_arrows);
-top_arrow = Array.from(top_arrows);
-imag_box = Array.from(imag_boxs);
-details_right = Array.from(details_rights);
+// bottom_arrow = Array.from(bottom_arrows);
+// top_arrow = Array.from(top_arrows);
+// imag_box = Array.from(imag_boxs);
+// details_right = Array.from(details_rights);
 
 
-for (var i = 0; i < bottom_arrow.length; i++) {
-bottom_arrow.forEach(function(bottom_arrow){
-  bottom_arrow.addEventListener('click',()=>{
-      bottom_arrow.style.display = "none";
-      imag_box.forEach(function(imag_box){
-          imag_box.style.display = "block";
-      });
-      details_right.forEach(function(details_right){
-        details_right.style.display = "block";
-      });
-      top_arrow.forEach(function(top_arrow){
-        top_arrow.style.display = "block";
-      });
-    });
+for (var i = 0; i < bottom_arrow.length; i++ , imag_box.length ,details_right ,top_arrow){
+  bottom_arrow[0].addEventListener('click',()=>{
+    bottom_arrow[0].style.display = "none";
+    imag_box[0].style.display = "block";
+    details_right[0].style.display = "block";
+    top_arrow[0].style.display = "inline";
   });
+  bottom_arrow[1].addEventListener('click',()=>{
+    bottom_arrow[1].style.display = "none";
+    imag_box[1].style.display = "block";
+    details_right[1].style.display = "block";
+    top_arrow[1].style.display = "inline";
+  });
+  bottom_arrow[2].addEventListener('click',()=>{
+    bottom_arrow[2].style.display = "none";
+    imag_box[2].style.display = "block";
+    details_right[2].style.display = "block";
+    top_arrow[2].style.display = "inline";
+  });
+  bottom_arrow[3].addEventListener('click',()=>{
+    bottom_arrow[3].style.display = "none";
+    imag_box[3].style.display = "block";
+    details_right[3].style.display = "block";
+    top_arrow[3].style.display = "inline";
+  });
+  bottom_arrow[4].addEventListener('click',()=>{
+    bottom_arrow[4].style.display = "none";
+    imag_box[4].style.display = "block";
+    details_right[4].style.display = "block";
+    top_arrow[4].style.display = "inline";
+  });
+  bottom_arrow[5].addEventListener('click',()=>{
+    bottom_arrow[5].style.display = "none";
+    imag_box[5].style.display = "block";
+    details_right[5].style.display = "block";
+    top_arrow[5].style.display = "inline";
+  });
+  bottom_arrow[6].addEventListener('click',()=>{
+    bottom_arrow[6].style.display = "none";
+    imag_box[6].style.display = "block";
+    details_right[6].style.display = "block";
+    top_arrow[6].style.display = "inline";
+  });
+  bottom_arrow[7].addEventListener('click',()=>{
+    bottom_arrow[7].style.display = "none";
+    imag_box[7].style.display = "block";
+    details_right[7].style.display = "block";
+    top_arrow[7].style.display = "inline";
+  });
+  bottom_arrow[8].addEventListener('click',()=>{
+    bottom_arrow[8].style.display = "none";
+    imag_box[8].style.display = "block";
+    details_right[8].style.display = "block";
+    top_arrow[8].style.display = "inline";
+  });
+  bottom_arrow[9].addEventListener('click',()=>{
+    bottom_arrow[9].style.display = "none";
+    imag_box[9].style.display = "block";
+    details_right[9].style.display = "block";
+    top_arrow[9].style.display = "inline";
+  });
+  top_arrow[0].addEventListener('click',()=>{
+    top_arrow[0].style.display = "none";
+    imag_box[0].style.display = "none";
+    details_right[0].style.display = "none";
+    bottom_arrow[0].style.display = "inline";
+  })
+  top_arrow[1].addEventListener('click',()=>{
+    top_arrow[1].style.display = "none";
+    imag_box[1].style.display = "none";
+    details_right[1].style.display = "none";
+    bottom_arrow[1].style.display = "inline";
+  })
+  top_arrow[2].addEventListener('click',()=>{
+    top_arrow[2].style.display = "none";
+    imag_box[2].style.display = "none";
+    details_right[2].style.display = "none";
+    bottom_arrow[2].style.display = "inline";
+  })
+  top_arrow[3].addEventListener('click',()=>{
+    top_arrow[3].style.display = "none";
+    imag_box[3].style.display = "none";
+    details_right[3].style.display = "none";
+    bottom_arrow[3].style.display = "inline";
+  })
+  top_arrow[4].addEventListener('click',()=>{
+    top_arrow[4].style.display = "none";
+    imag_box[4].style.display = "none";
+    details_right[4].style.display = "none";
+    bottom_arrow[4].style.display = "inline";
+  })
+  top_arrow[5].addEventListener('click',()=>{
+    top_arrow[5].style.display = "none";
+    imag_box[5].style.display = "none";
+    details_right[5].style.display = "none";
+    bottom_arrow[5].style.display = "inline";
+  })
+  top_arrow[6].addEventListener('click',()=>{
+    top_arrow[6].style.display = "none";
+    imag_box[6].style.display = "none";
+    details_right[6].style.display = "none";
+    bottom_arrow[6].style.display = "inline";
+  })
+  top_arrow[7].addEventListener('click',()=>{
+    top_arrow[7].style.display = "none";
+    imag_box[7].style.display = "none";
+    details_right[7].style.display = "none";
+    bottom_arrow[7].style.display = "inline";
+  })
+  top_arrow[8].addEventListener('click',()=>{
+    top_arrow[8].style.display = "none";
+    imag_box[8].style.display = "none";
+    details_right[8].style.display = "none";
+    bottom_arrow[8].style.display = "inline";
+  })
+  top_arrow[9].addEventListener('click',()=>{
+    top_arrow[9].style.display = "none";
+    imag_box[9].style.display = "none";
+    details_right[9].style.display = "none";
+    bottom_arrow[9].style.display = "inline";
+  })
 }
 
 
 
-top_arrow.forEach(function(top_arrow){
-  top_arrow.addEventListener('click',()=>{
-    top_arrow.style.display = "none";
-    imag_box.forEach(function(imag_box){
-        imag_box.style.display = "none";
-    });
-    details_right.forEach(function(details_right){
-      details_right.style.display = "none";
-    });
-    bottom_arrow.forEach(function(bottom_arrow){
-      bottom_arrow.style.display = "block";
-    });
-  });
-});
 
+// for (var i = 0; i < bottom_arrow.length; i++) {
+//   console.log(bottom_arrow[0]);
+//   bottom_arrow.forEach(function(bottom_arrow){
+//   bottom_arrow.addEventListener('click',()=>{
+//       bottom_arrow.style.display = "none";
+//       imag_box.forEach(function(imag_box){
+//           imag_box.style.display = "block";
+//       });
+//       details_right.forEach(function(details_right){
+//         details_right.style.display = "block";
+//       });
+//       top_arrow.forEach(function(top_arrow){
+//         top_arrow.style.display = "block";
+//       });
+//     });
+//   });
+// }
+
+
+// for (var i = 0; i < top_arrow.length; i++) {
+// top_arrow.forEach(function(top_arrow){
+//   top_arrow.addEventListener('click',()=>{
+//     top_arrow.style.display = "none";
+//     imag_box.forEach(function(imag_box){
+//         imag_box.style.display = "none";
+//     });
+//     details_right.forEach(function(details_right){
+//       
+//     });
+//     bottom_arrow.forEach(function(bottom_arrow){
+//       bottom_arrow.style.display = "block";
+//     });
+//   });
+// });
+// }
 
 

@@ -169,6 +169,10 @@ header li{
   display: none;
 }
 
+.top-arrow{
+  display: none;
+}
+
 .details-left img{
   display: block;
   width: 80%;
