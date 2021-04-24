@@ -727,7 +727,7 @@ input[type="date"]{
   }
 
   .details-left h2{
-    width: 91%;
+    font-size: calc( (100vw / 428 ) * 39 );
   }
 
   .details-left img{
