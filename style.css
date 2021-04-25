@@ -82,6 +82,7 @@ header li{
   font-size: 24px;
   height: 24px;
   cursor: pointer;
+  display: none;
 }
 
 .info-map img{
@@ -809,5 +810,9 @@ input[type="date"]{
 
   .info-map{
     width: 95%;
+  }
+
+  .info-map-text-box{
+    display: block;
   }
 }
