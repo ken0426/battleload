@@ -13,11 +13,14 @@ body{
   z-index: 99;
   position: fixed;
   opacity: 0;
+  visibility: hidden;
   transition: .3s;
+  cursor: pointer;
 }
 
 
 .top-icon.active{
+  visibility: visible;
   opacity: 1;
 }
 
