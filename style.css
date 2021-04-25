@@ -63,6 +63,36 @@ header li{
   position: relative;
 }
 
+.info-map{
+  display: flex;
+  justify-content: flex-end;
+  width: 66%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.info-map p{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.info-map-text-box{
+  margin-right: 34px;
+  font-size: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.info-map img{
+  width: 24px;
+}
+
+.info-map-img-box{
+  height: 24px;
+  cursor: pointer;
+}
+
 .search_container{
   width: 484px;
   height: 40px;
@@ -775,5 +805,9 @@ input[type="date"]{
 
   #word{
     display: none;
+  }
+
+  .info-map{
+    width: 95%;
   }
 }
