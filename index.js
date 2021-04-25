@@ -18,6 +18,9 @@ const imag_box = document.querySelectorAll(".imag-box");
 const details_right = document.querySelectorAll(".details-right");
 const info_map_text_box = document.getElementById("info-map-text-box");
 const info_map_text_box2 = document.getElementById("info-map-text-box2");
+const top_icon = document.getElementById(".top-icon");
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
   for (let i = 0; i < targetElement.length; i++) {
