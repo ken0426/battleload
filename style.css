@@ -94,6 +94,10 @@ header li{
   cursor: pointer;
 }
 
+#info-map-text-box2{
+  display: none;
+}
+
 .search_container{
   width: 484px;
   height: 40px;
@@ -814,5 +818,9 @@ input[type="date"]{
 
   .info-map-text-box{
     display: block;
+  }
+
+  #info-map-text-box2{
+    display: none;
   }
 }
