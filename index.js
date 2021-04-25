@@ -18,9 +18,29 @@ const imag_box = document.querySelectorAll(".imag-box");
 const details_right = document.querySelectorAll(".details-right");
 const info_map_text_box = document.getElementById("info-map-text-box");
 const info_map_text_box2 = document.getElementById("info-map-text-box2");
-const top_icon = document.getElementById(".top-icon");
+const top_icon = document.querySelectorAll(".top-icon");
 
+top_icon.length
 
+$(window).on('scroll', function () {
+  var doch = $(document).innerHeight(); //ページ全体の高さ
+  var winh = $(window).innerHeight(); //ウィンドウの高さ
+  var bottom = doch * .8 - winh; //ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
+  if (bottom <= $(window).scrollTop()) {
+  //一番下までスクロールした時に実行
+    top_icon[0].classList.add("active");
+  }
+});
+
+$(window).on('scroll', function () {
+  var doch = $(document).innerHeight(); //ページ全体の高さ
+  var winh = $(window).innerHeight(); //ウィンドウの高さ
+  var top = doch * .8 - winh;
+  if (top > $(window).scrollTop()) {
+  //一番下までスクロールした時に実行
+    top_icon[0].classList.remove("active");
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   for (let i = 0; i < targetElement.length; i++) {
@@ -377,5 +397,3 @@ for (var i = 0; i < bottom_arrow.length; i++ , imag_box.length ,details_right ,t
 //   });
 // });
 // }
-
-
