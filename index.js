@@ -20,8 +20,10 @@ const info_map_text_box = document.getElementById("info-map-text-box");
 const info_map_text_box2 = document.getElementById("info-map-text-box2");
 const top_icon = document.querySelectorAll(".top-icon");
 const topIcon = document.getElementById("top-icon");
+const info_map_img_box = document.getElementById("info-map-img-box");
+const info_map_show = document.getElementById("info-map-show");
 
-top_icon.length
+// top_icon.length
 
 $(window).on('scroll', function () {
   var doch = $(document).innerHeight(); //ページ全体の高さ
@@ -405,3 +407,11 @@ $(topIcon).click(function() {
   }, 500);
   return false;
 });
+
+info_map_img_box.addEventListener('click',()=>{
+  info_map_show.style.visibility = "visible";
+})
+
+info_map_show.addEventListener('click',()=>{
+  info_map_show.style.visibility = "hidden";
+})

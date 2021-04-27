@@ -22,7 +22,6 @@ body{
   width: 100%;
 }
 
-
 .top-icon.active{
   visibility: visible;
   opacity: 1;
@@ -68,7 +67,39 @@ header li{
 }
 
 .mask{
-  display: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.mask.active{
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.info-map-show{
+  width: 100vw;
+  height: 100vh;
+  background-color: #666666;
+  opacity: 0.9;
+  visibility: hidden;
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+.mask-info.active{
+  opacity: 0.7;
+  visibility: visible;
 }
 
 #nav{
@@ -102,7 +133,7 @@ header li{
 .info-map p{
   position: absolute;
   top: 8px;
-  right: 10px;
+  right: 2%;
 }
 
 .info-map-text-box{
@@ -686,24 +717,7 @@ input[type="date"]{
     transform: translateY(0%); /* もとに戻す */
   }
 
-  .mask{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-  }
   
-  .mask.active{
-    opacity: 0.7;
-    visibility: visible;
-  }
 
   .contents{
     width: 100vw;
@@ -842,6 +856,10 @@ input[type="date"]{
 
   .info-map{
     width: 95%;
+  }
+
+  .info-map p{
+    right: 4%;
   }
 
   .info-map-text-box{
