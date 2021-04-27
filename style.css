@@ -6,16 +6,20 @@ body{
 
 .top-icon{
   position: absolute;
-  bottom: 50px;
+  bottom: 12px;
   right: 20px;
-  background-color: black;
   color: rgb(255, 255, 255);
   z-index: 99;
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  transition: .3s;
+  transition: .5s;
   cursor: pointer;
+  width: 60px;
+}
+
+.top-icon img{
+  width: 100%;
 }
 
 
