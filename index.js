@@ -19,6 +19,7 @@ const details_right = document.querySelectorAll(".details-right");
 const info_map_text_box = document.getElementById("info-map-text-box");
 const info_map_text_box2 = document.getElementById("info-map-text-box2");
 const top_icon = document.querySelectorAll(".top-icon");
+const topIcon = document.getElementById("top-icon");
 
 top_icon.length
 
@@ -397,3 +398,10 @@ for (var i = 0; i < bottom_arrow.length; i++ , imag_box.length ,details_right ,t
 //   });
 // });
 // }
+
+$(topIcon).click(function() {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 500);
+  return false;
+});
