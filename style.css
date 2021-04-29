@@ -179,6 +179,12 @@ header li{
   border-radius: 8px;
 }
 
+.content__modal.is-info-search{
+  height: calc(100% - 140px);
+  overflow: auto;
+  padding: 40px 90px;
+}
+
 .search_container{
   width: 484px;
   height: 40px;
