@@ -22,6 +22,8 @@ const top_icon = document.querySelectorAll(".top-icon");
 const topIcon = document.getElementById("top-icon");
 const info_map_img_box = document.getElementById("info-map-img-box");
 const info_map_show = document.getElementById("info-map-show");
+const conditions_menu_info = document.getElementById("conditions-menu-info");
+const close_btn_info = document.getElementById("close_btn_info");
 
 // top_icon.length
 
@@ -410,8 +412,15 @@ $(topIcon).click(function() {
 
 info_map_img_box.addEventListener('click',()=>{
   info_map_show.style.visibility = "visible";
+  conditions_menu_info.classList.toggle("active");
+})
+
+close_btn_info.addEventListener('click',()=>{
+  conditions_menu_info.classList.toggle("active");
+  info_map_show.style.visibility = "hidden";
 })
 
 info_map_show.addEventListener('click',()=>{
   info_map_show.style.visibility = "hidden";
+  conditions_menu_info.classList.toggle("active");
 })

@@ -157,6 +157,28 @@ header li{
   display: none;
 }
 
+.conditions-menu-info{
+  width: 620px;
+  height: 65vh;
+  background: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  z-index: 7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.conditions-menu-info.active{
+  width: 620px;
+  height: 65vh;
+  visibility: visible;
+  border-radius: 8px;
+}
+
 .search_container{
   width: 484px;
   height: 40px;
@@ -729,6 +751,10 @@ input[type="date"]{
   }
 
   .conditions-menu.active{
+    width: 95vw;
+  }
+
+  .conditions-menu-info.active{
     width: 95vw;
   }
 
